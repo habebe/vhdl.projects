@@ -1,0 +1,9 @@
+1. Derive truth table for 2 bits comparator and obtain logical expressions.
+2. Derive the HDL code for 2 bit comparator.
+3. Derive the testbench and perform simulation.
+4. Synthesize circuit and verify operation.
+
+Repeat step 2-4 for a 4 bit comparator.
+5. Derive the HDL code for 4 bit comparator using the 2 bit comparator.
+6. Derive the testbench for 4 bit comparator and verify operation.
+7. Synthesize and verify operation.
