@@ -1,16 +1,16 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Sun Jun 30 12:41:41 2019
+| Date             : Sun Jun 30 16:12:46 2019
 | Host             : DESKTOP-AHMV5KS running 64-bit major release  (build 9200)
-| Command          : report_power -file main_compare2b_power_routed.rpt -pb main_compare2b_power_summary_routed.pb -rpx main_compare2b_power_routed.rpx
-| Design           : main_compare2b
+| Command          : report_power -file top_compare4b_power_routed.rpt -pb top_compare4b_power_summary_routed.pb -rpx top_compare4b_power_routed.rpx
+| Design           : top_compare4b
 | Device           : xc7a100tcsg324-1
 | Design State     : routed
 | Grade            : commercial
 | Process          : typical
 | Characterization : Production
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Power Report
 
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.207        |
+| Total On-Chip Power (W)  | 2.868        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.097        |
-| Device Static (W)        | 0.110        |
+| Dynamic (W)              | 2.760        |
+| Device Static (W)        | 0.109        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 70.4         |
-| Junction Temperature (C) | 39.6         |
+| Max Ambient (C)          | 71.9         |
+| Junction Temperature (C) | 38.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.010 |        3 |       --- |             --- |
-|   LUT as Logic |     0.010 |        2 |     63400 |           <0.01 |
-| Signals        |     0.035 |        7 |       --- |             --- |
-| I/O            |     3.052 |        7 |       210 |            3.33 |
-| Static Power   |     0.110 |          |           |                 |
-| Total          |     3.207 |          |           |                 |
+| Slice Logic    |     0.021 |        6 |       --- |             --- |
+|   LUT as Logic |     0.021 |        4 |     63400 |           <0.01 |
+| Signals        |     0.059 |       14 |       --- |             --- |
+| I/O            |     2.679 |       11 |       210 |            5.24 |
+| Static Power   |     0.109 |          |           |                 |
+| Total          |     2.868 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +67,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.087 |       0.061 |      0.026 |
-| Vccaux    |       1.800 |     0.130 |       0.111 |      0.019 |
-| Vcco33    |       3.300 |     0.863 |       0.859 |      0.004 |
+| Vccint    |       1.000 |     0.137 |       0.112 |      0.025 |
+| Vccaux    |       1.800 |     0.116 |       0.097 |      0.019 |
+| Vcco33    |       3.300 |     0.753 |       0.749 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -131,11 +131,10 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------+-----------+
-| Name           | Power (W) |
-+----------------+-----------+
-| main_compare2b |     3.097 |
-|   uut          |     0.018 |
-+----------------+-----------+
++---------------+-----------+
+| Name          | Power (W) |
++---------------+-----------+
+| top_compare4b |     2.760 |
++---------------+-----------+
 
 

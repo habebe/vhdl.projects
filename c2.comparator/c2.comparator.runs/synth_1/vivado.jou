@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Jun 30 12:40:00 2019
-# Process ID: 18656
+# Start of session at: Sun Jun 30 16:11:24 2019
+# Process ID: 8496
 # Current directory: D:/Tinkerer/vhdl.projects/c2.comparator/c2.comparator.runs/synth_1
-# Command line: vivado.exe -log main_compare2b.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_compare2b.tcl
-# Log file: D:/Tinkerer/vhdl.projects/c2.comparator/c2.comparator.runs/synth_1/main_compare2b.vds
+# Command line: vivado.exe -log top_compare4b.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_compare4b.tcl
+# Log file: D:/Tinkerer/vhdl.projects/c2.comparator/c2.comparator.runs/synth_1/top_compare4b.vds
 # Journal file: D:/Tinkerer/vhdl.projects/c2.comparator/c2.comparator.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source main_compare2b.tcl -notrace
+source top_compare4b.tcl -notrace

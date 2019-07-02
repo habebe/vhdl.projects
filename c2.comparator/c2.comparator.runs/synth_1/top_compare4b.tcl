@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,7 +30,8 @@ set_property ip_output_repo d:/Tinkerer/vhdl.projects/c2.comparator/c2.comparato
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   D:/Tinkerer/vhdl.projects/c2.comparator/c2.comparator.srcs/sources_1/new/Compare2b.vhd
-  D:/Tinkerer/vhdl.projects/c2.comparator/c2.comparator.srcs/sources_1/new/main_compare2b.vhd
+  D:/Tinkerer/vhdl.projects/c2.comparator/c2.comparator.srcs/sources_1/new/Compare4b.vhd
+  D:/Tinkerer/vhdl.projects/c2.comparator/c2.comparator.srcs/sources_1/new/top_compare4b.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -48,12 +47,12 @@ set_property used_in_implementation false [get_files D:/Tinkerer/vhdl.projects/c
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top main_compare2b -part xc7a100tcsg324-1
+synth_design -top top_compare4b -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef main_compare2b.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file main_compare2b_utilization_synth.rpt -pb main_compare2b_utilization_synth.pb"
+write_checkpoint -force -noxdef top_compare4b.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file top_compare4b_utilization_synth.rpt -pb top_compare4b_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

@@ -1,13 +1,13 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Jun 30 12:40:22 2019
+| Date         : Sun Jun 30 16:11:47 2019
 | Host         : DESKTOP-AHMV5KS running 64-bit major release  (build 9200)
-| Command      : report_utilization -file main_compare2b_utilization_synth.rpt -pb main_compare2b_utilization_synth.pb
-| Design       : main_compare2b
+| Command      : report_utilization -file top_compare4b_utilization_synth.rpt -pb top_compare4b_utilization_synth.pb
+| Design       : top_compare4b
 | Device       : 7a100tcsg324-1
 | Design State : Synthesized
------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |    2 |     0 |     63400 | <0.01 |
-|   LUT as Logic          |    2 |     0 |     63400 | <0.01 |
+| Slice LUTs*             |    4 |     0 |     63400 | <0.01 |
+|   LUT as Logic          |    4 |     0 |     63400 | <0.01 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |    0 |     0 |    126800 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |    126800 |  0.00 |
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    7 |     0 |       210 |  3.33 |
+| Bonded IOB                  |   11 |     0 |       210 |  5.24 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -146,8 +146,9 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| IBUF     |    4 |                  IO |
+| IBUF     |    8 |                  IO |
 | OBUF     |    3 |                  IO |
+| LUT5     |    3 |                 LUT |
 | LUT4     |    3 |                 LUT |
 +----------+------+---------------------+
 
