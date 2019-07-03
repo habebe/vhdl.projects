@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jul  2 21:33:35 2019
+# Process ID: 17812
+# Current directory: D:/Tinkerer/vhdl.projects/c2.decoder/c2.decoder.runs/impl_1
+# Command line: vivado.exe -log Decoder_3_8.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Decoder_3_8.tcl -notrace
+# Log file: D:/Tinkerer/vhdl.projects/c2.decoder/c2.decoder.runs/impl_1/Decoder_3_8.vdi
+# Journal file: D:/Tinkerer/vhdl.projects/c2.decoder/c2.decoder.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Decoder_3_8.tcl -notrace
